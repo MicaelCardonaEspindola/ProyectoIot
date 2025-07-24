@@ -127,8 +127,8 @@ export const comprarSuscripcion = async (req, res) => {
         cliente_id: cliente_id.toString(),
         suscripcion_id: suscripcion_id.toString(),
       },
-     success_url: `${process.env.DOMAIN}/auth/register?cliente_id=${cliente_id}&suscripcion_id=${suscripcion_id}`,
-  cancel_url: `${process.env.DOMAIN}/api-v1/payment/cancel`,
+     success_url: `${process.env.DOMAIN}/register`,
+  cancel_url: `${process.env.DOMAIN}/login`,
     });
 
     // Respuesta: solo necesitas redireccionar a esta URL en el frontend
