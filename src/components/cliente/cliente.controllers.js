@@ -165,7 +165,7 @@ export const confirmarPagoSuscripcion = async (req, res) => {
 
       res.json({
         success: true,
-        message: 'Pago confirmado y suscripción activada exitosamente',
+        message: 'Pago confirmado y suscripción activada exitosamente si',
         cliente_id: cliente_id,
         suscripcion_id: suscripcion_id,
         plan: paymentIntent.metadata.nombre_plan
